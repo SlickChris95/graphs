@@ -52,5 +52,18 @@ g.append("g")
          .attr('dy','0.71em')
          .attr('text-anchor','end')
          .text('value');
-         
+
 g.selectAll('.bar')
+  .data(dataset)
+  .enter().append('rect')
+  .attr('class','bar')
+  .attr('y',(d,i)=> height - 3 * d)
+  // .attr('x',(d)=>{return xScale(dataset.map((d)=> d[0]);})
+  .attr('x',xScale()
+  // .attr('y',(d)=>{return yScale(dataset.map((d)=> d[1]);})
+  // .attr("width", xScale.bandwidth())
+  // .attr("height", (d, i) => d * 3);
+  .attr('width', xScale.bandwidth())
+  .attr('height',(d) => {
+    return height - yScale(dataset.map((d)=>d[1]))
+  }))
