@@ -9,3 +9,5 @@ I will be referencing some online resources such as "25 days of D3"
 1) One shape, many shapes
 
 2) Scales, Shapes and Colors
+
+3) Controlling the Flow of Data
