@@ -13,3 +13,5 @@ I will be referencing some online resources such as "25 days of D3"
 3) Controlling the Flow of Data
 
 4) Groups, Attributes and Styles
+
+5) First Bar Chart
