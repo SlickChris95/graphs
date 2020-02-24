@@ -8,6 +8,4 @@ I will be referencing some online resources such as "25 days of D3"
 
 1) One shape, many shapes
 
-## Simple Bar graph
-
-bar graph folder
+2) Scales, Shapes and Colors
