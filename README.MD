@@ -11,3 +11,5 @@ I will be referencing some online resources such as "25 days of D3"
 2) Scales, Shapes and Colors
 
 3) Controlling the Flow of Data
+
+4) Groups, Attributes and Styles
