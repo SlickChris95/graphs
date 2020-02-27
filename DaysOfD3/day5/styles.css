@@ -1,0 +1,25 @@
+#tooltip {
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    pointer-events: none;
+}
+body {
+  background-color: pink;
+}
+h1 {
+  text-align: center;
+}
+h1:hover {
+  color: red;
+}
+.bar:hover {
+  fill: pink;
+}
+.bars:hover {
+  fill: red;
+}

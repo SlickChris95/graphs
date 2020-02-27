@@ -66,6 +66,14 @@ const yAxis = d3.axisLeft(yScale)
   .tickSizeOuter(0)
 
 /*
+** Tooltip
+*/
+d3.select('body').append('div').attr('id','tooltip')
+.attr('style','position: absolute; opacity: 0;')
+
+
+
+/*
 
 ** Binding data to chart
 
@@ -91,6 +99,17 @@ const yAxis = d3.axisLeft(yScale)
         //this is how we 'flip' the chart the correct way
         .attr('height', d => yScale(0) - yScale(d.value))
         .style('fill', '#7472c0')
+        .on('mouseover',(d)=>{
+          d3.select('#tooltip').transition().duration(200).style('opacity',1)
+          d3.select('#tooltip').html(d.year + '<br/>' + d.value)
+        })
+        .on('mouseout',()=>{
+          d3.select('#tooltip').style('opacity',0)
+        })
+        .on('mousemove',()=>{
+          d3.select('#tooltip').style('left', (d3.event.pageX+10) + 'px')
+          .style('top', (d3.event.pageY+10) + 'px')
+        })
 
     // Here we render the x axis
     svg.append('g')

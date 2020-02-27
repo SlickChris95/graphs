@@ -15,3 +15,5 @@ I will be referencing some online resources such as "25 days of D3"
 4) Groups, Attributes and Styles
 
 5) First Bar Chart
+
+6) Donut Chart 
