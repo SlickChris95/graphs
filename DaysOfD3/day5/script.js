@@ -1,8 +1,9 @@
+// define the size of our graph
 let margin = { top: 10, right: 1, bottom: 20, left: 35}
-let width = 1300;
+let width = 1000;
 let height = 500;
 
-
+// graph data
 let data = [
   { year: 2005, value: 734.69 },
   { year: 2006, value: 750.70 },
@@ -19,22 +20,7 @@ let data = [
   { year: 2017, value: 967.13 },
   { year: 2018, value: 1007.24 },
   { year: 2019, value: 907.24 },
-  { year: 2020, value: 997.24 },
-  { year: 2021, value: 997.24 },
-  { year: 2022, value: 997.24 },
-  { year: 2023, value: 997.24 },
-  { year: 2024, value: 997.24 },
-  { year: 2025, value: 997.24 },
-  { year: 2026, value: 997.24 },
-  { year: 2027, value: 997.24 },
-  { year: 2028, value: 997.24 },
-  { year: 2029, value: 997.24 },
-  { year: 2030, value: 997.24 },
-  { year: 2031, value: 997.24 },
-  { year: 2032, value: 997.24 },
-
-
-
+  { year: 2020, value: 997.24 }
 ]
 
 /*

@@ -23,3 +23,8 @@ h1:hover {
 .bars:hover {
   fill: red;
 }
+
+svg {
+  display: block;
+  margin: 0 auto;
+}

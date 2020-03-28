@@ -2,25 +2,24 @@ const USdata = [
    { type: 'Poultry', value: 48.9954 },
    { type: 'Beef', value: 25.9887 },
    { type: 'Pig', value: 22.9373 },
-   { type: 'Sheep', value: 0.4869 }
+   { type: 'Sheep', value: 10.4869 }
 ];
 
 const height = 500;
 const width = 900;
+const colors = [ '#976393', '#685489', '#43457f', '#ff9b83' ]
 
-let colorScale = ()=> {
+//assing color to each item
+let colorScale = d3.scaleOrdinal( USdata.map(d => d.type), colors );
 
-  const colors = [ '#976393', '#685489', '#43457f', '#ff9b83' ]
-
-  return d3.scaleOrdinal( USdata.map(d => d.type), colors )
-
-}
 
 let arc = d3.arc()
 //to see a pie chart, just change this to zero
+// .innerRadius(0.5 * height / 2)
 .innerRadius(0.5 * height / 2)
+
 //outer radius is less than the full radius b/c our labels will set outside of dounut
-.outerRadius(0.85 * height / 2)
+.outerRadius(.85 * height / 2)
 
 let pie = d3.pie()
 .value((d)=> d.value)
