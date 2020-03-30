@@ -1,0 +1,42 @@
+#monthChart{
+	text-align: center;
+}
+
+#monthChart .line {
+	stroke: rgb(247, 150, 29);
+	stroke-width: 2;
+	fill: none;
+}
+
+#monthChart .axis {
+  shape-rendering: crispEdges;
+}
+
+#monthChart .x.axis line {
+  stroke: rgba(88, 89, 93, .12);
+}
+
+#monthChart .x.axis .minor {
+  stroke-opacity: .5;
+}
+
+#monthChart .x.axis path {
+  display: none;
+}
+
+#monthChart .y.axis line, .y.axis path {
+  fill: none;
+  stroke: rgba(88, 89, 93, .5);
+}
+
+#monthChart .axis path,
+#monthChart .axis line {
+  fill: none;
+  stroke: rgba(88, 89, 93, .3);
+  shape-rendering: crispEdges;
+}
+
+#monthChart .axis text {
+  font: 10px sans-serif;
+  fill: rgba(88, 89, 93, .5);
+}
