@@ -33,7 +33,7 @@ const yMax = d3.max(data,(d)=> d.value)
 
 //our x-axis is defined by our xscale. the xscale is a scaleband.
 //this scale will divide the range into evenly-sized segments.
-const xDomain = data.map((d)=> d.year)
+const xDomain = data.map((d)=> d.year) // input
 const xScale = d3.scaleBand()
   .domain(xDomain)
   .range([margin.left, width - margin.right - margin.left])

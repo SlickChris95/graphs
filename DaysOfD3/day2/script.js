@@ -19,35 +19,35 @@ range is for output values
 //will be passed to the scale when we draw
 
 const xScale = d3.scaleOrdinal()
-  .domain(data)
-  .range([10,40,70,100,130]);
+  .domain(data) // input
+  .range([10,40,70,100,130]); // output
 
 
 //the domain is the minimum value of our data to the maximum
 //value of our data (continous)
 const yScale = d3.scaleLinear()
-  .domain([0,4])
-  .range([10,maxHeight]);
+  .domain([0,4]) //input
+  .range([10,maxHeight]); // output
 
 const colorScale = d3.scaleLinear()
-  .domain([0,4])
-  .range(['#eee','steelblue']);
+  .domain([0,4]) // input
+  .range(['#eee','steelblue']); // output
 
 const svg = d3.select('svg')
 
 svg.selectAll('rect')
-//data bind
-.data(data)
-.enter()
-//append all rects
-.append('rect')
-.attr('width',20)
-.attr('y',15)
+  //data bind
+  .data(data)
+  .enter()
+  //append all rects
+  .append('rect')
+  .attr('width',20)
+  .attr('y',15)
 
 
-.attr('x',(d)=> xScale(d))
-.attr('height', (d)=> yScale(d))
-.style('fill',(d)=> colorScale(d))
+  .attr('x',(d)=> xScale(d))
+  .attr('height', (d)=> yScale(d))
+  .style('fill',(d)=> colorScale(d))
 
 
 

@@ -72,8 +72,12 @@ let g = svg.append('g')
 // 3) x axis
 g.append('g')
   .attr('class', 'axis axis--x')
-  .attr('transform', `translate(0,${height})`)
+  // moved the x-axis slightly to the left in order to fix alignment issue
+  .attr('transform', `translate(-50,${height})`)
   .call(d3.axisBottom(xScale))
+
+
+
 // 4) y axis
 g.append('g')
   .attr('class','axis axis--y')
